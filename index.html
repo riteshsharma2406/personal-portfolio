@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/52a66a1547.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/ritesh-logo-1.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#services">Service</a></li> -->
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark fas" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <!-- <p>Web Developer / Software Engineer</p> -->
+                <h1>Hi, I'm <span>< Ritesh Sharma /></span><br> Software Engineer.</h1>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ---------------------about------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-image.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Fresher web Developer from India. Currently doing Bachelor of Engineering (B.E) in Pune. In my spare time I like gaming and building my own projects. My preferred tools are JavaScript, HTML and CSS</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>My Skills</span> <br>
+                                <br> HTML &#160 CSS &#160 JavaScript 
+                                <br> C++ &#160 ReactJS &#160 MySQL  
+                                <br> NodeJS 
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="experience">
+                        <ul>
+                            <li><span>2020-2020</span><br>Internship at Younoia as Research and frontend Devloper intern</li>
+                            <li><span>2016-2017</span><br>Intership at MyCaptain in Social and Digital Marketing</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Current</span><br>B.E (ENTC) from D. Y. Patil Institute of Technology, Pune</li>
+                            <li><span>2020</span><br>12th (PCM) at Kendriya Vidyalaya Southern Command, Pune</li>
+                            <li><span>2017</span><br>Class 10th at Kendriya Vidyalaya Southern Command, Pune</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------services-------------- -->
+
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, vel.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, vel.</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio, vel.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- ----------------------------portfolio-----------------  -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/weather.jpg" alt="">
+                    <div class="layer">
+                        <h3> <strong> Weather App </strong></h3>
+                        <p>t is a basic Weather searching APP which tells you the information with the help of API(Rapid API) to use this --> write the name of city in the Search Box and It will tell you the temprature, humidity, wind info of the city.</p>
+                        <a class="live" data-tooltip="Demo" href="https://riteshsharma2406.github.io/weather-app.github.io/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="code" data-tooltip="code" href="https://github.com/riteshsharma2406/weather-app.github.io"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/food.jpg" alt="">
+                    <div class="layer">
+                        <h3> <strong>Recipe Book App</strong></h3>
+                        <p>Recipe Book App, The main function of the app is to fetch diffrent recipes from the spoonacular API ( Food based API) and show the data on the web page</p>
+                        <a class="live" data-tooltip="Demo" class href="https://riteshsharma2406.github.io/Project-3-Recipe-Book-App/"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="code" data-tooltip="code"  href="https://github.com/riteshsharma2406/Project-3-Recipe-Book-App"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/progress.jpg" alt="">
+                    <div class="layer">
+                        <h3><strong>realtor clone App</strong></h3>
+                        <p>Realtor a real state web app where we can buy or rent properties online. Used Technologies are ReactJS, TailWind CSS and Firebase database</p>
+                        <!-- <a class="live" data-tooltip="Demo" href="#" ><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a> -->
+
+                        <button class=" btn btn-2 btn-3"> In Progress </button>
+                        <a class="code" data-tooltip="code"  href="https://github.com/riteshsharma2406/realtor-clone-react"><i class="fa-solid fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <button class="btn">See More</button> -->
+        </div>
+    </div>
+
+
+
+    <!-- -------------------contact-----------------  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> sharma.ritesh2406@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 9172536415</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ritesh-sharma-537b30205/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/_ritesh__rs"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/_ritesh__rs/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="/images/my-cv.pdf" download class="btn btn-2" >Download CV</a>
+                </div>
+                
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required id="">
+                        <textarea name="Message" id=""  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Send Message</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Ritesh. Made with <i class="fa-solid fa-heart heart"></i></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link")
+            }
+
+            for(tabconent of tabcontents)
+            {
+                tabconent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openMenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closeMenu()
+        {
+            sidemenu.style.right="-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwn-hQX5ZspxulIFWZCp1Ap04SkTw_eMP8uVqf3OEu7Dw1qRKpzeCeLqKaYZQpkB-Zw1Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+
+                msg.innerHTML="<i class='fa fa-check' aria-hidden='true'></i>"+" Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },2000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
